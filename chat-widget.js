@@ -397,6 +397,13 @@
 
     async function startNewConversation() {
         currentSessionId = generateUUID();
+        
+        const welcomeMessage = document.createElement('div');
+        welcomeMessage.className = 'chat-message bot';
+        welcomeMessage.textContent = config.branding.welcomeText || '👋 Hello! How can we assist you today?';
+        messagesContainer.appendChild(welcomeMessage);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        
         const data = [{
             action: "loadPreviousSession",
             sessionId: currentSessionId,
