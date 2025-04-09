@@ -1,7 +1,7 @@
 // Chat Widget Script
 (function() {
     // Create and inject styles
-    const styles = `
+    const styles = 
         .n8n-chat-widget {
             --chat--color-primary: var(--n8n-chat-primary-color, #854fff);
             --chat--color-secondary: var(--n8n-chat-secondary-color, #6b3fd4);
