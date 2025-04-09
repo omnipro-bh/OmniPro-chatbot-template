@@ -294,7 +294,7 @@
             logo: '',
             name: '',
             welcomeText: '',
-            responseTimeText: 'hello its me',
+            responseTimeText: '',
             poweredBy: {
                 text: 'Powered by Omni Pro',
                 link: 'https://omnipro-bh.com/'
