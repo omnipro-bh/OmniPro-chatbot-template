@@ -293,8 +293,8 @@
         branding: {
             logo: '',
             name: '',
-            welcomeText: 'hello its me',
-            responseTimeText: '',
+            welcomeText: '',
+            responseTimeText: 'hello its me',
             poweredBy: {
                 text: 'Powered by Omni Pro',
                 link: 'https://omnipro-bh.com/'
