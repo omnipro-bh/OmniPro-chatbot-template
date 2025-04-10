@@ -427,11 +427,22 @@
             welcomeMessage.textContent = config.branding.welcomeText || '👋 Hello! How can we assist you today?';
             messagesContainer.appendChild(welcomeMessage);
 
-            const botMessageDiv = document.createElement('div');
-            botMessageDiv.className = 'chat-message bot';
-            botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
-            messagesContainer.appendChild(botMessageDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            //const botMessageDiv = document.createElement('div');
+            //botMessageDiv.className = 'chat-message bot';
+            //botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
+            //messagesContainer.appendChild(botMessageDiv);
+            //messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+const botReply = Array.isArray(responseData) ? responseData[0]?.output : responseData?.output;
+
+if (botReply && botReply.trim() !== '') {
+    const botMessageDiv = document.createElement('div');
+    botMessageDiv.className = 'chat-message bot';
+    botMessageDiv.textContent = botReply;
+    messagesContainer.appendChild(botMessageDiv);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
         } catch (error) {
             console.error('Error:', error);
         }
