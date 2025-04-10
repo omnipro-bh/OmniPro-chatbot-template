@@ -236,21 +236,7 @@
             align-items: center;
             justify-content: center;
         }
-        
-// injected styles
-.n8n-chat-widget .chat-toggle {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.n8n-chat-widget .chat-toggle svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
-}
-// END injected styles
+    
 
         .n8n-chat-widget .chat-toggle.position-left {
             right: auto;
