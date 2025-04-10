@@ -250,7 +250,7 @@
         .n8n-chat-widget .chat-toggle svg {
             width: 24px;
             height: 24px;
-            fill: currentColor;
+   
         }
 
         .n8n-chat-widget .chat-footer {
