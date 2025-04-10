@@ -388,7 +388,6 @@ toggleButton.innerHTML = `
 </svg>`;
 
 
-
     toggleButton.style.color = '#fff';
     widgetContainer.appendChild(chatContainer);
     widgetContainer.appendChild(toggleButton);
