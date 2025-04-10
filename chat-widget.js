@@ -226,7 +226,8 @@
             height: 60px;
             border-radius: 30px;
             background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
-            color: white;
+            //color: white;
+            color: #fff !important;
             border: none;
             cursor: pointer;
             box-shadow: 0 4px 12px rgba(133, 79, 255, 0.3);
@@ -237,7 +238,6 @@
             justify-content: center;
         }
     
-
         .n8n-chat-widget .chat-toggle.position-left {
             right: auto;
             left: 20px;
