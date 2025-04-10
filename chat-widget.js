@@ -421,6 +421,12 @@
             chatContainer.querySelector('.new-conversation').style.display = 'none';
             chatInterface.classList.add('active');
 
+            // ✅ Inject welcome message here
+            const welcomeMessage = document.createElement('div');
+            welcomeMessage.className = 'chat-message bot';
+            welcomeMessage.textContent = config.branding.welcomeText || '👋 Hello! How can we assist you today?';
+            messagesContainer.appendChild(welcomeMessage);
+
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
             botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
