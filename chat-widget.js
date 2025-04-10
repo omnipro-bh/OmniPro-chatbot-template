@@ -293,7 +293,7 @@
         branding: {
             logo: '',
             name: '',
-            welcomeText: '',
+            //welcomeText: '',
             responseTimeText: '',
             poweredBy: {
                 text: 'Powered by Omni Pro',
